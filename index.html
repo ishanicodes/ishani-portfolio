@@ -32,7 +32,7 @@
 html { scroll-behavior: smooth; }
 body {
   background: var(--bg); color: var(--fg);
-  font-family: var(--body); font-size: 1.0625rem; line-height: 1.65;
+  font-family: var(--body); font-size: 1.1875rem; line-height: 1.65;
   padding-block: 0;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
@@ -41,20 +41,20 @@ body {
 section { padding-block: 4.5rem 1rem; }
 h1, h2, h3 { font-family: var(--display); font-weight: 700; text-wrap: balance; margin: 0; }
 h1 { font-size: clamp(2.1rem, 8vw, 3.3rem); line-height: 1.1; }
-h2 { font-size: 1.5rem; line-height: 1.2; margin-bottom: 1.5rem; }
-h3 { font-size: 1.2rem; line-height: 1.3; }
+h2 { font-size: 1.75rem; line-height: 1.2; margin-bottom: 1.5rem; }
+h3 { font-size: 1.35rem; line-height: 1.3; }
 p { margin: 0 0 1rem; max-width: 62ch; }
 a { color: var(--accent); text-underline-offset: 3px; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-.label { font-family: var(--display); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.label { font-family: var(--display); font-size: 0.9rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
 
 .hero { padding-block: 4rem 2rem; }
 .hero .name { margin-bottom: 2.25rem; }
-.hero .pos { font-family: var(--display); font-weight: 400; font-size: clamp(1.3rem, 5vw, 1.8rem); line-height: 1.4; margin: 0 0 1.25rem; text-wrap: balance; max-width: 30ch; }
+.hero .pos { font-family: var(--display); font-weight: 400; font-size: clamp(1.4rem, 5.5vw, 1.9rem); line-height: 1.4; margin: 0 0 1.25rem; text-wrap: balance; max-width: 30ch; }
 .hero .sub { color: var(--muted); margin-bottom: 2rem; }
 .btn {
-  display: inline-block; font-family: var(--body); font-weight: 500; font-size: 1rem;
-  padding: 0.8rem 1.4rem; border-radius: 3px; border: 1px solid var(--accent);
+  display: inline-block; font-family: var(--body); font-weight: 500; font-size: 1.1rem;
+  padding: 0.85rem 1.5rem; border-radius: 3px; border: 1px solid var(--accent);
   background: var(--accent); color: var(--accent-ink); text-decoration: none; cursor: pointer;
   transition: background 0.15s, color 0.15s;
 }
@@ -67,26 +67,26 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .card:hover { border-color: var(--accent); }
 .cover { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 2px; }
 .card h3 { margin-top: 0.25rem; }
-.card .aka { font-size: 0.95rem; color: var(--muted); margin: -0.25rem 0 0; }
-.card p { margin: 0; font-size: 1rem; }
+.card .aka { font-size: 1.05rem; color: var(--muted); margin: -0.25rem 0 0; }
+.card p { margin: 0; font-size: 1.125rem; }
 .card .view { font-weight: 500; align-self: flex-start; }
 
 .plain { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
-.plain li { padding: 0.85rem 0; border-bottom: 1px solid var(--line); font-size: 1rem; }
+.plain li { padding: 0.9rem 0; border-bottom: 1px solid var(--line); font-size: 1.125rem; }
 .plain .label { display: block; margin-bottom: 0.15rem; }
 
 .steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.25rem; counter-reset: step; }
 .steps li { counter-increment: step; display: grid; grid-template-columns: 2.25rem 1fr; gap: 0.5rem; }
 .steps li::before { content: counter(step) "."; font-family: var(--display); font-weight: 700; color: var(--accent); }
-.steps h3 { font-size: 1.05rem; margin-bottom: 0.2rem; }
-.steps p { margin: 0; color: var(--muted); font-size: 1rem; }
+.steps h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
+.steps p { margin: 0; color: var(--muted); font-size: 1.125rem; }
 
 .contact-row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-block: 1.25rem; }
-.email { font-family: var(--display); font-size: 1.05rem; overflow-wrap: anywhere; min-width: 0; user-select: all; }
+.email { font-family: var(--display); font-size: 1.15rem; overflow-wrap: anywhere; min-width: 0; user-select: all; }
 .links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
 .song { margin-top: 1.5rem; border: 1px solid var(--line); background: var(--surface); border-radius: 4px; padding: 1rem; display: flex; flex-direction: column; gap: 0.35rem; align-items: flex-start; }
-.song .title { font-family: var(--display); font-weight: 700; font-size: 1.1rem; }
-footer { padding-block: 4rem 3rem; color: var(--muted); font-size: 0.9rem; }
+.song .title { font-family: var(--display); font-weight: 700; font-size: 1.2rem; }
+footer { padding-block: 4rem 3rem; color: var(--muted); font-size: 1rem; }
 footer p { margin: 0; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn, .card { transition: none; } }
 </style>
@@ -95,7 +95,7 @@ footer p { margin: 0; }
   <header class="hero">
     <p class="label">writer and designer</p>
     <h1 class="name">Ishani Chanchani</h1>
-    <p class="pos">I write and design reports, playbooks and frameworks for education and social-impact teams.</p>
+    <p class="pos">I write and design reports, playbooks and frameworks for brands, startups, individuals and social-impact teams.</p>
     <p class="sub">I spent six and a half years inside classrooms and nonprofits before this became my work, so I write from the field, not about it.</p>
     <a class="btn" href="#work">See my work</a>
   </header>
@@ -103,7 +103,7 @@ footer p { margin: 0; }
   <section id="about">
     <h2>a little about me</h2>
     <p>I studied journalism, then spent over six years in education. I taught 8th graders in government schools in Jhunjhunu, Rajasthan as a Gandhi Fellow, then joined the founding team of a nonprofit called The Unifly Collective, where I led fundraising and strategy.</p>
-    <p>Somewhere along the way, the reports, decks and campaigns I was making became the work people asked me for. Now I write and design for teams like the ones I came from.</p>
+    <p>Somewhere along the way, the reports, decks and campaigns I was making became the work people asked me for. Now I write and design for teams like the ones I came from, and for brands, startups and individuals too.</p>
   </section>
 
   <section id="work">
@@ -166,18 +166,20 @@ footer p { margin: 0; }
   </section>
 
   <section id="approach">
-    <h2>how we'd work together</h2>
+    <h2>how i work</h2>
     <ol class="steps">
-      <li><div><h3>An intro call</h3><p>I get to know your brand, your voice and how you like things to look.</p></div></li>
-      <li><div><h3>Finding the problem</h3><p>We work out what is really going on and how big the project is.</p></div></li>
-      <li><div><h3>Agreeing the deliverables</h3><p>We settle what I will make and by when.</p></div></li>
-      <li><div><h3>Check-ins along the way</h3><p>Short catch-ups mid-project, so nothing comes as a surprise.</p></div></li>
+      <li><div><h3>Intro call</h3><p>We talk through your organisation, your audience and how you want the work to look and sound.</p></div></li>
+      <li><div><h3>Scoping the problem</h3><p>We pin down the problem you need solved and what the project has to cover.</p></div></li>
+      <li><div><h3>Agreeing deliverables</h3><p>We agree what I will deliver, in what format and by when.</p></div></li>
+      <li><div><h3>Mid-project check-ins</h3><p>We meet at set points to review progress and change course early if we need to.</p></div></li>
+      <li><div><h3>Delivery and revisions</h3><p>I deliver the final work. You share your feedback and I make the changes.</p></div></li>
+      <li><div><h3>After it ships</h3><p>I would like to hear how it works once it is in use.</p></div></li>
     </ol>
   </section>
 
   <section id="contact">
     <h2>let's talk</h2>
-    <p>I take on project-based work: reports, playbooks, decks and brand pieces. Write to me and we can figure out scope and timelines on a call.</p>
+    <p>I take on project-based work. Write to me and we can figure out scope and timelines on a call.</p>
     <div class="contact-row">
       <a class="email" href="mailto:ishani_chanchani@pg26.mesaschool.co" id="email">ishani_chanchani@pg26.mesaschool.co</a>
       <button class="btn ghost" id="copy" type="button">Copy email</button>
