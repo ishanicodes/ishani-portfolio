@@ -88,7 +88,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .steps p { margin: 0; color: var(--muted); font-size: 1.125rem; }
 
 .contact-row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-block: 1.25rem; }
-.email { font-family: var(--display); font-size: 1.15rem; overflow-wrap: anywhere; min-width: 0; user-select: all; }
+.email { font-family: var(--display); font-size: clamp(0.75rem, 3.8vw, 1.1rem); white-space: nowrap; flex-basis: 100%; min-width: 0; user-select: all; }
 .links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
 .song { margin-top: 1.5rem; border: 1px solid var(--line); background: var(--surface); border-radius: 4px; padding: 1rem; display: flex; flex-direction: column; gap: 0.35rem; align-items: flex-start; }
 .song .title { font-family: var(--display); font-weight: 700; font-size: 1.2rem; }
